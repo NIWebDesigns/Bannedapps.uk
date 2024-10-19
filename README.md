@@ -1,11 +1,7 @@
 # My Links
 
-- [**CV**](https://niwebdesigns.co.uk/Myself/CV/)
-- [**MAP**](https://niwebdesigns.co.uk/Myself/Map)
-- [**PHOTOS**](https://niwebdesigns.co.uk/Myself/Photos)
-
-- 
-
-
-- [**SEARCH**](https://niwebdesigns.co.uk/Myself/Search)
-
+- [**BANNEDAPPS**](https://bannedapps.uk/Home/index.html)
+-
+- [**TV.BANNEDAPPS.UK**](https://tv.bannedapps.uk)
+- [**TV.BANNEDAPPS.UK/ADMIN.PHP**](https://tv.bannedapps.uk/admin.php)
+- [**STREAM2.BANNEDAPPS.UK**](https://stream2.bannedapps.uk)
