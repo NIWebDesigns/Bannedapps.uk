@@ -4,124 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Download Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-    }
-
-    /* Header */
-    header {
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 1em;
-      font-size: 2em;
-    }
-
-    /* Section container */
-    .section {
-      margin: 1em;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      background-color: #ffffff;
-    }
-
-    /* Section title */
-    .section-title {
-      background-color: #e2e2e2;
-      padding: 1em;
-      cursor: pointer;
-      font-size: 1.5em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* Section content, hidden by default */
-    .section-content {
-      display: none;
-      padding: 1em;
-    }
-
-    /* Download buttons grid */
-    .download-buttons {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 1em;
-    }
-
-    .download-button {
-      padding: 1em;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      text-align: center;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-button:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
   <!-- Header -->
-  <header>
-    Download Page
+  <header style="background-color: #ffffff; color: #000; text-align: center; padding: 1em; font-size: 2em; font-weight: bold; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    Bannedapps.uk Downloads
   </header>
 
   <!-- Section 1 -->
-  <div class="section">
-    <div class="section-title" onclick="toggleSection('section1')">
+  <div style="margin: 1em; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #ffffff; width: 90%; max-width: 800px;">
+    <div onclick="toggleSection('section1')" style="background-color: #ff9800; padding: 1em; cursor: pointer; font-size: 1.5em; text-align: center; font-weight: bold; color: white;">
       Section 1
     </div>
-    <div class="section-content" id="section1">
-      <div class="download-buttons">
-        <button class="download-button">Download 1</button>
-        <button class="download-button">Download 2</button>
-        <button class="download-button">Download 3</button>
-        <button class="download-button">Download 4</button>
-        <button class="download-button">Download 5</button>
+    <div id="section1" style="display: none; padding: 1em; text-align: center;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1em; justify-content: center;">
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 1</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 2</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 3</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 4</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 5</button>
       </div>
     </div>
   </div>
 
   <!-- Section 2 -->
-  <div class="section">
-    <div class="section-title" onclick="toggleSection('section2')">
+  <div style="margin: 1em; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #ffffff; width: 90%; max-width: 800px;">
+    <div onclick="toggleSection('section2')" style="background-color: #ff9800; padding: 1em; cursor: pointer; font-size: 1.5em; text-align: center; font-weight: bold; color: white;">
       Section 2
     </div>
-    <div class="section-content" id="section2">
-      <div class="download-buttons">
-        <button class="download-button">Download 6</button>
-        <button class="download-button">Download 7</button>
-        <button class="download-button">Download 8</button>
-        <button class="download-button">Download 9</button>
-        <button class="download-button">Download 10</button>
+    <div id="section2" style="display: none; padding: 1em; text-align: center;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1em; justify-content: center;">
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 6</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 7</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 8</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 9</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 10</button>
       </div>
     </div>
   </div>
 
   <!-- Section 3 -->
-  <div class="section">
-    <div class="section-title" onclick="toggleSection('section3')">
+  <div style="margin: 1em; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #ffffff; width: 90%; max-width: 800px;">
+    <div onclick="toggleSection('section3')" style="background-color: #ff9800; padding: 1em; cursor: pointer; font-size: 1.5em; text-align: center; font-weight: bold; color: white;">
       Section 3
     </div>
-    <div class="section-content" id="section3">
-      <div class="download-buttons">
-        <button class="download-button">Download 11</button>
-        <button class="download-button">Download 12</button>
-        <button class="download-button">Download 13</button>
-        <button class="download-button">Download 14</button>
-        <button class="download-button">Download 15</button>
+    <div id="section3" style="display: none; padding: 1em; text-align: center;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1em; justify-content: center;">
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 11</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 12</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 13</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 14</button>
+        <button style="padding: 1em; background-color: #ff9800; color: white; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; font-weight: bold;">Download 15</button>
       </div>
     </div>
   </div>
