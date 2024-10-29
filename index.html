@@ -12,10 +12,10 @@
             // Detect Firestick devices by checking for 'AFT' and 'Linux; Android' in the user-agent string
             if (userAgent.includes('AFT') && userAgent.includes('Linux; Android')) {
                 // Redirect Firestick users to home/download.html
-                window.location.href = './home/download.html';
+                window.location.href = './Home/FireStick.html';
             } else {
                 // Redirect non-Firestick users to home/index.html
-                window.location.href = './home/index.html';
+                window.location.href = './Home/index.html';
             }
         });
     </script>
