@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/62cb6f017b967b117998e919/1ibcd5amh';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Device Redirect</title>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Get the user agent
+            // Function to check if the user agent matches any of the specified devices
+            function isTargetDevice(userAgent) {
+                return [
+                    "AFT", "SHIELD", "Formuler", "DColour", "ADT-2", "CrKey", "Roku4640X",
+                    "NEO-X5", "AFTWMST22", "AFTS", "Nexus Player", "AppleTV11,1", 
+                    "AppleTV6,2", "AppleTV5,3", "DQ06 Build"
+                ].some(device => userAgent.includes(device));
+            }
+
+            // Redirect based on device
             const userAgent = navigator.userAgent;
-
-            // Check for specific devices
-            if (
-                userAgent.includes("AFT") ||               // Amazon Fire TV devices
-                userAgent.includes("SHIELD") ||            // NVIDIA Shield
-                userAgent.includes("Formuler") ||          // Formuler Boxes
-                userAgent.includes("DColour") ||           // DColour Android Stick
-                userAgent.includes("ADT-2") ||             // Google ADT-2
-                userAgent.includes("CrKey") ||             // Chromecast
-                userAgent.includes("Roku4640X") ||         // Roku Ultra
-                userAgent.includes("NEO-X5") ||            // Minix NEO X5
-                userAgent.includes("AFTWMST22") ||         // Amazon AFTWMST22
-                userAgent.includes("AFTS") ||              // Amazon 4K Fire TV
-                userAgent.includes("Nexus Player") ||      // Google Nexus Player
-                userAgent.includes("AppleTV11,1") ||       // Apple TV 6th Gen 4K
-                userAgent.includes("AppleTV6,2") ||        // Apple TV 5th Gen 4K
-                userAgent.includes("AppleTV5,3")           // Apple TV 4th Gen
-                userAgent.includes("DQ06 Build/SP1A.211105.004") // DQ06
-
-            ) {
-                // Redirect to a specific site for these devices
+            if (isTargetDevice(userAgent)) {
                 window.location.href = "https://bannedapps.uk/D/D.html";
             } else {
-                // Redirect all other users to a general site
                 window.location.href = "https://bannedapps.uk/Home/index.html";
             }
         });
     </script>
+
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function() {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/62cb6f017b967b117998e919/1ibcd5amh';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        });
+    </script>
+    <!-- End of Tawk.to Script -->
 </head>
 <body>
     <p>Redirecting...</p>
+    <noscript><p>Please enable JavaScript to redirect.</p></noscript>
 </body>
 </html>
