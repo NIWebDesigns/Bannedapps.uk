@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Header */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 2em;
+    }
+
+    /* Section container */
+    .section {
+      margin: 1em;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    /* Section title */
+    .section-title {
+      background-color: #e2e2e2;
+      padding: 1em;
+      cursor: pointer;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Section content, hidden by default */
+    .section-content {
+      display: none;
+      padding: 1em;
+    }
+
+    /* Download buttons grid */
+    .download-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1em;
+    }
+
+    .download-button {
+      padding: 1em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    Download Page
+  </header>
+
+  <!-- Section 1 -->
+  <div class="section">
+    <div class="section-title" onclick="toggleSection('section1')">
+      Section 1
+    </div>
+    <div class="section-content" id="section1">
+      <div class="download-buttons">
+        <button class="download-button">Download 1</button>
+        <button class="download-button">Download 2</button>
+        <button class="download-button">Download 3</button>
+        <button class="download-button">Download 4</button>
+        <button class="download-button">Download 5</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section">
+    <div class="section-title" onclick="toggleSection('section2')">
+      Section 2
+    </div>
+    <div class="section-content" id="section2">
+      <div class="download-buttons">
+        <button class="download-button">Download 6</button>
+        <button class="download-button">Download 7</button>
+        <button class="download-button">Download 8</button>
+        <button class="download-button">Download 9</button>
+        <button class="download-button">Download 10</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section">
+    <div class="section-title" onclick="toggleSection('section3')">
+      Section 3
+    </div>
+    <div class="section-content" id="section3">
+      <div class="download-buttons">
+        <button class="download-button">Download 11</button>
+        <button class="download-button">Download 12</button>
+        <button class="download-button">Download 13</button>
+        <button class="download-button">Download 14</button>
+        <button class="download-button">Download 15</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for toggling sections -->
+  <script>
+    function toggleSection(sectionId) {
+      const content = document.getElementById(sectionId);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

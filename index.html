@@ -2,61 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=/Home/index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
+    <script>
+        // Redirect based on device type
+        document.addEventListener("DOMContentLoaded", function() {
+            const userAgent = navigator.userAgent;
 
-        .container {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 48px;
-            font-weight: 300;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-
-        .loader {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #3498db;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1s linear infinite;
-            margin: 30px auto;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+            // Detect Firestick devices by checking for 'AFT' and 'Linux; Android' in the user-agent string
+            if (userAgent.includes('AFT') && userAgent.includes('Linux; Android')) {
+                // Redirect Firestick users to home/download.html
+                window.location.href = './home/download.html';
+            } else {
+                // Redirect non-Firestick users to home/index.html
+                window.location.href = './home/index.html';
+            }
+        });
+    </script>
 </head>
 <body>
-
-    <div class="container">
-        <h1>Redirecting you...</h1>
-        <p>You will be taken to the page in 5 seconds. Please wait!</p>
-        <div class="loader"></div>
-        <p>If you are not redirected, <a href="/Home/index.html">click here</a>.</p>
-    </div>
-
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="./home/index.html">click here</a> for the main website.</p>
 </body>
 </html>
