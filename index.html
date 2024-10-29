@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>Device Redirect</title>
     <script>
-        // Redirect based on device type
         document.addEventListener("DOMContentLoaded", function() {
+            // Get the user agent
             const userAgent = navigator.userAgent;
 
-            // Detect Firestick devices by checking for 'AFT' and 'Linux; Android' in the user-agent string
-            if (userAgent.includes('AFT') && userAgent.includes('Linux; Android')) {
-                // Redirect Firestick users to Home/FireStick.html
-                window.location.href = './Home/FireStick.html';
+            // Check for specific devices
+            if (
+                userAgent.includes("AFT") ||               // Amazon Fire TV devices
+                userAgent.includes("SHIELD") ||            // NVIDIA Shield
+                userAgent.includes("Formuler") ||          // Formuler Boxes
+                userAgent.includes("DColour") ||           // DColour Android Stick
+                userAgent.includes("ADT-2") ||             // Google ADT-2
+                userAgent.includes("CrKey") ||             // Chromecast
+                userAgent.includes("Roku4640X") ||         // Roku Ultra
+                userAgent.includes("NEO-X5") ||            // Minix NEO X5
+                userAgent.includes("AFTWMST22") ||         // Amazon AFTWMST22
+                userAgent.includes("AFTS") ||              // Amazon 4K Fire TV
+                userAgent.includes("Nexus Player") ||      // Google Nexus Player
+                userAgent.includes("AppleTV11,1") ||       // Apple TV 6th Gen 4K
+                userAgent.includes("AppleTV6,2") ||        // Apple TV 5th Gen 4K
+                userAgent.includes("AppleTV5,3")           // Apple TV 4th Gen
+            ) {
+                // Redirect to a specific site for these devices
+                window.location.href = "https://bannedapps.uk/F/D.html";
             } else {
-                // Redirect non-Firestick users to Home/index.html
-                window.location.href = './Home/index.html';
+                // Redirect all other users to a general site
+                window.location.href = "https://bannedapps.uk";
             }
         });
     </script>
 </head>
 <body>
-    <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, <a href="./home/index.html">click here</a> for the main website.</p>
+    <p>Redirecting...</p>
 </body>
 </html>
