@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Device Redirect</title>
+    
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Function to check if the user agent matches any of the specified devices
-            function isTargetDevice(userAgent) {
-                return [
-                    "AFT", "SHIELD", "Formuler", "DColour", "ADT-2", "CrKey", "Roku4640X",
-                    "NEO-X5", "AFTWMST22", "AFTS", "Nexus Player", "AppleTV11,1", 
-                    "AppleTV6,2", "AppleTV5,3", "DQ06 Build",
-                    "AFTSS", "AFTSSS", "TIVO STREAM 4K", "Roku 3930X"
-                ].some(device => userAgent.includes(device));
-            }
+        // Function to check if the user agent matches any of the specified devices
+        function isTargetDevice(userAgent) {
+            return [
+                "AFT", "SHIELD", "Formuler", "DColour", "ADT-2", "CrKey", "Roku4640X",
+                "NEO-X5", "AFTWMST22", "AFTS", "Nexus Player", "AppleTV11,1", 
+                "AppleTV6,2", "AppleTV5,3", "DQ06 Build",
+                "AFTSS", "AFTSSS", "TIVO STREAM 4K", "Roku 3930X"
+            ].some(device => userAgent.includes(device));
+        }
 
-            // Get the user agent and perform redirection based on type
+        // Redirect function
+        function performRedirect() {
             const userAgent = navigator.userAgent;
             if (isTargetDevice(userAgent)) {
                 window.location.href = "https://bannedapps.uk/D/D.html";
             } else {
                 window.location.href = "https://shoppy.gg/@itsmat32143";
             }
-        });
+        }
+
+        // Run redirect on page load
+        window.addEventListener("load", performRedirect);
     </script>
 
+    <!-- Tawk.to Script -->
     <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function() {
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function() {
-                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-                s1.async = true;
-                s1.src = 'https://embed.tawk.to/62cb6f017b967b117998e919/1ibcd5amh';
-                s1.charset = 'UTF-8';
-                s1.setAttribute('crossorigin', '*');
-                s0.parentNode.insertBefore(s1, s0);
-            })();
-        });
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/62cb6f017b967b117998e919/1ibcd5amh';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
-    </head>
+</head>
 <body>
     <p>Redirecting...</p>
     <noscript><p>Please enable JavaScript to redirect.</p></noscript>
