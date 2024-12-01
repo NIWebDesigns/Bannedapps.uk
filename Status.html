@@ -37,6 +37,31 @@
         .post:last-child {
             border-bottom: none;
         }
+        .whatsapp-section {
+            background-color: #25d366;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .whatsapp-section a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .whatsapp-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .whatsapp-section a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -47,27 +72,28 @@
         <ul class="posts" id="postsList">
             <li class="post">
                 <h3>Attention Customers: Temporary App Downtime</h3>
-                <p>Our main app is currently down. To continue enjoying our service, please follow these steps:
-
-Go to "Downloader" on your Firestick:
-
-If you don’t have the Downloader app installed, download it from the Amazon App Store.
-Type the following URL into Downloader:bannedapps.uk/D/D.html
-
-Download the "Q App" from the website:
-
-The app will have a different image and will be named TV.
-Install the app:
-
-Follow the prompts to install it on your device.
-Sign in with your login information:
-
-Use the same login credentials you have for the main app.
-Once installed, you’ll be able to enjoy our service with no further issues.
-
-Thank you for your patience</p>
+                <p>Our main app is currently down. To continue enjoying our service, please follow these steps:</p>
+                <ol>
+                    <li>Go to "Downloader" on your Firestick.</li>
+                    <li>If you don’t have the Downloader app installed, download it from the Amazon App Store.</li>
+                    <li>Type the following URL into Downloader: <strong>bannedapps.uk/D/D.html</strong></li>
+                    <li>Download the "Q App" from the website.</li>
+                    <li>The app will have a different image and will be named TV.</li>
+                    <li>Install the app and follow the prompts to install it on your device.</li>
+                    <li>Sign in with your login information (the same credentials for the main app).</li>
+                    <li>Once installed, you’ll be able to enjoy our service with no further issues.</li>
+                </ol>
+                <p>Thank you for your patience.</p>
             </li>
         </ul>
+
+        <!-- WhatsApp Group Section with logo and updated text -->
+        <a href="https://chat.whatsapp.com/Kepo63BDAcf7wsAyUcGTzm" target="_blank">
+            <div class="whatsapp-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
+                <span>Click here to join our WhatsApp group for updates</span>
+            </div>
+        </a>
     </main>
 </body>
 </html>
