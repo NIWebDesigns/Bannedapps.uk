@@ -1,9 +1,9 @@
 <div align="center">
 
-# Issue Tracking
+# Issue Reporting
 Live TV issues server migration in progress to stabilise service
 
-### Join Our Whats App Group
+## Join Our Whats App Group
 - [Guidelines for Filing Issues](#)
 
 </div>
